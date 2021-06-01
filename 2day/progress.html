@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 시맨틱 태그</title></head>
+<body>
+<h3>인라인 시맨틱 태그 사례</h3>
+<hr>
+<p>내일 <mark>HTML5 시험</mark><br>
+시간은 <time>09:00</time><br>
+난이도 <meter value="0.1" max="2.0">80%</meter><br>
+자료 업로딩(20%)
+	<progress value="6" max="10" min="5"></progress>
+  <button id="up">증가</button><button id="down">감소</button><br>
+</p>
+<script>
+const btnEle1 = document.querySelector("button#up");
+btnEle1.addEventListener("click", function(){
+  const progress = document.querySelector("progress");
+  progress.value += 1;
+}); 
+const btnEle2 = document.querySelector("button#down");
+btnEle2.addEventListener("click", function(){
+  const progress = document.querySelector("progress");
+  progress.value -= 1;
+}); 
+</script>
+</body>
+</html>

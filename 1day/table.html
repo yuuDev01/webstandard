@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    tfoot {
+      background-color: darkturquoise;
+      color: white;
+    }
+
+    thead {
+      background-color: blueviolet;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    window.addEventListener("load", function () {
+      const tfootEle = document.querySelector('tfoot');
+      tfootEle.addEventListener("mouseover", function (e) {
+        tfootEle.style.backgroundColor = "yellow";
+      });
+      tfootEle.addEventListener("mouseout", function (e) {
+        tfootEle.style.backgroundColor = "green";
+      });
+
+      const buttonEle = document.querySelector("button");
+      buttonEle.addEventListener("click", function (e) {
+        tfootEle.style.fontSize = "30px"
+      })
+    });
+
+  </script>
+
+</head>
+
+<body>
+  <button>클릭</button>
+  <table border="1">
+    <thread>
+      <tr>
+        <th>11열</th>
+        <th>12열</th>
+        <th>13열</th>
+      </tr>
+    </thread>
+    <tfoot>
+      <tr>
+        <td>31열</td>
+        <td>32열</td>
+        <td>33열</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>21열</td>
+        <td>22열</td>
+        <td>23열</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</body>
+
+</html>

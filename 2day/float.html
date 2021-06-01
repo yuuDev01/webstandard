@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1{
+      background-color: yellow;
+      width: 50px; height: 50px;
+      float:left; 
+    }
+    .box2{
+      background-color: green;
+      width: 50px; height: 50px;
+      float:right; /* float를 하면 block 요소가 없어짐*/
+    }
+    .box3{
+      background-color: red;
+      width: 70px; height: 70px;
+      float:right;
+    }
+    .box4{
+      background-color: pink;
+      width: 50px; height: 60px;
+      float:right;
+    }
+    .box5{
+      background-color: blue;
+      width: 50px; height: 60px;
+      float:left;
+    }
+    .clearfix{
+      clear:both;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3 clearfix">box3</div>
+  <div class="box4">box4</div> <!--복수값-->
+  <div class="box5 clearfix">box5</div>
+  <!--div.box1{box1}-->
+</body>
+</html>
