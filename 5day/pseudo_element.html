@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul >li {
+      position: relative;
+      cursor: help;
+    }
+    ul>li:hover::after{
+      position: absolute;
+      background-color: yellow;
+      content: attr(data-tooltip);
+      left:50px; top:-1.5em;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      border-bottom-left-radius: 0;
+      color:#000;
+      font-size: 0.5em;
+      transition: 0.5s;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li data-tooltip="툴팁도움말1">menu1</li>
+    <li data-tooltip="툴팁도움말2">menu2</li>
+    <li data-tooltip="툴팁도움말3">menu3</li>
+  </ul>
+</body>
+</html>

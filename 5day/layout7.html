@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* *{
+      outline: 1px solid red;
+    } */
+    body{
+      margin: 0; background-color: black;
+      text-transform: uppercase;
+    }
+    .box{
+      text-align: center;
+    }
+    .box1{
+      height: 150px; line-height: 150px;
+      width: 600px;
+      background-color: aqua;
+      margin: 10px auto;
+    }
+    .box2, .box3, .box4{
+      width: 33.333%;
+      float: left;
+    }
+    .box2{
+      background-color: white;
+      height: 100px; line-height: 100px;
+    }
+    .box3{
+      height: 100px; line-height: 100px;
+      background-color: grey;
+    }
+    .box4{
+      height: 100px; line-height: 100px;
+      background-color: yellow;
+    }
+    .box5{
+      height: 100px; line-height: 150px;
+      width: 600px;
+      background-color: aqua;
+      margin: 0 auto;
+    }
+    .box6{
+      width: 600px;
+      height: 30px;
+      line-height: 30px;
+      background-color: violet;
+      margin:0 auto;
+
+    }
+    .box234-wrap{
+      width: 600px;
+      margin:10px auto;
+    }
+    .box7{
+      background-color: white;
+      height: 30px;
+
+    }
+    .clearfix::after{
+      content: " "; display: block; clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box box7">box7</div>
+  <div class="box box1">box1</div>
+  <div class="box box6">box6</div>
+  <div class="box box234-wrap">
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="box box5">box5</div>
+  
+</body>
+</html>

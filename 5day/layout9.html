@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* * {
+      outline: 1px solid red;
+    } */
+
+    body {
+      margin: 0;
+    }
+
+    /* 공통 */
+    .container {
+      width: 900px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    ul{
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    a{
+      text-decoration: none;
+      color : #000
+    }
+
+    /* 최상위메뉴 */
+    .uppermost {
+      height: 30px; background-color: yellow;
+    }
+
+    .uppermost .container-upm {
+      background-color: greenyellow;
+      width: 100%;
+      padding-top: 5px;
+
+    }
+
+    /* 헤더 */
+    .header {
+      height: 200px;
+      background-color: aqua;
+    }
+
+    .header .container-h {
+      width: 100%;
+      background-image: url("https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_960_720.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+
+    }
+
+    .header .container-h::after{
+      content: "찾지 마세요";
+      font-size: 3rem;
+      position: absolute;
+      /*rem root의 font size 2배  */
+      left: 100px;
+      top:30px;
+      color: white;
+      text-shadow: 3px 3px goldenrod;
+    }
+
+    .header .container-h:hover::after{
+      font-size: 4rem;
+      transform: rotate(-25deg);
+      /* deg 각도 */
+    }
+
+    /* .header .container-h img{
+      height: 100%;
+      width: 100%;
+    } */
+    /* 메뉴 */
+
+    .nav {
+      height: 30px;
+      background-color: aquamarine;
+    }
+    ul{
+      margin:0;
+    }
+    .nav ul li{
+      float: left;
+      padding: 3px 10px;
+    }
+    .nav ul li:nth-child(1){
+      padding-left: 0;
+    }
+    .nav ul li:hover{
+      text-decoration: underline;
+      font-weight: 550;
+    }
+    .nav .container-n {}
+
+    /* 메인 */
+    .main{
+      background-color:transparent;
+      height: 400px;
+    }
+    .sidebar {
+      height: 100%;
+      width: 30%;
+      background-color: red;
+      float: left;
+    }
+
+    .content {
+      height: 100%;
+      width: 70%;
+      background-color: blue;
+      float: left;
+    }
+
+    .content form{
+      width: 50%;
+      margin: 50px auto;
+    }
+    .content form{
+      color: white;
+      font-weight: bold;
+    }
+
+    .content form p{
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .content form ul li{
+      padding:5px 0;
+    }
+    .content form ul li input{
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .content form ul li button{
+      width: 100%;
+      border: none;
+      padding : 5px 0;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+    }
+    /* footer */
+    .footer {
+      height: 100px;
+      background-color: gray;
+    }
+
+    .footer .copyright{
+      text-align: center;
+      line-height: 100px;
+    }
+    /* 유틸 */
+    .clearfix::after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="uppermost">
+    <div class="container container-upm">Log-in | Event Sale</div>
+  </div>
+  <div class="header">
+    <div class="container container-h">
+      <!-- <img src="https://cdn.pixabay.com/photo/2017/09/14/22/42/milky-way-2750627_960_720.jpg" alt=""> -->
+    </div>
+  </div>
+  <div class="nav">
+    <div class="container container-n">
+      <ul class="clearfix">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+      </ul>
+      <!-- menu1   menu2   menu3   menu4   menu5 -->
+    </div>
+  </div>
+  <div class="main">
+    <div class="container clearfix">
+      <div class="sidebar">
+        <ol>
+          <li>항목1</li>
+          <li>항목2</li>
+          <li>항목3</li>
+          <li>항목4</li>
+          <li>항목5</li>
+        </ol>
+      </div>
+      <div class="content">
+        <form>
+          <p>로그인</p>
+          <ul>
+            <li><label for="user_id">아이디</label></li>
+            <li><input type="text" id="user_id"></li>
+            <li><label for="user_pw">비밀번호</label></li>
+            <li><input type="password" id="user_pw"></li>
+            <li><button>로그인</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container container-f">
+      <div class="copyright">
+        Copyright(c) 울산 All Right Reserved
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
