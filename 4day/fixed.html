@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      outline: 1px solid red;
+    }
+    body{
+      height:200vh;
+      
+    }
+    div.container{
+      width: 300px;
+      height: 200px;
+      background-color: violet;
+    }
+    div.box{
+      position: fixed; /* 화면(view point)을 기준으로 잡음*/
+      top: 50px; left:50px;
+      width: 50px; height: 50px;
+      background-color: rgba(0,0,0,0.3);
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">box</div>
+  </div>
+</body>
+</html>
