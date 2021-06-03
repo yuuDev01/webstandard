@@ -1,0 +1,98 @@
+@charset "utf-8";
+*{
+  /* outline: 1px solid red; */
+}
+body{
+  margin:0;
+}
+/* 공통 */
+.content{
+  width: 800px;
+  margin: 0 auto;
+  height:100%;
+}
+/* uppermost */
+.uppermost{
+  background-color: orchid;
+  height: 30px;
+}
+
+.uppermost .content-u{
+  background-color: papayawhip;
+}
+/* header */
+.header{
+  background-color: palegoldenrod;
+  height: 100px;
+}
+
+.header .content-h{
+  background-color: peru;
+}
+/* nav */
+.nav{
+  background-color: palegreen;
+  height: 30px;
+}
+.nav .content-n{
+  background-color: pink;
+}
+/* main */
+.main{
+  background-color: paleturquoise;
+  height: 300px;
+}
+
+.main .content-m{
+  background-color: skyblue;
+  height: 100%;
+
+}
+.main .content-m .wrap{
+  box-sizing: border-box;
+  border: 5px solid;
+height: 100%;
+}
+
+.main .content-m .wrap .section{
+  width: 60%; height: 100%;
+  background-color: navajowhite;
+
+  float: left;
+
+}
+.main .content-m .wrap .sidebanner{
+width: 20%; height: 100%;
+background-color: azure;
+float: left;
+
+}
+
+.main .content-m .wrap .sidemenu{
+width: 20%; height: 100%;
+float: left;
+
+}
+
+/* footmenu */
+.footermenu{
+  background-color: palevioletred;
+  height: 30px;
+}
+.footermenu .content-fm{
+  background-color: rebeccapurple;
+}
+
+/* footer */
+.footer{
+  background-color: papayawhip;
+  height: 100px;
+}
+
+.footer .content-f{
+  background-color: salmon;
+}
+.clearfix::after{
+ content:" "; display: block; clear: both;
+}
+
