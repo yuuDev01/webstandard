@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <style>
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+      margin:0;
+    }
+    a{
+      text-decoration: none; color: inherit;
+    }
+    /* 레이아웃 */
+    .footer-contents {
+      text-transform: uppercase;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .footer-contents .footer-contents-1,
+    .footer-contents .footer-contents-2,
+    .footer-contents .footer-contents-3,
+    .footer-contents .footer-contents-4 {
+      float: left;
+      margin-right: 15px;
+    }
+
+    .footer-contents .footer-contents-1 {
+      width: 150px;
+      height: 150px;
+      background-color: orangered;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+    }
+
+    /* footer 스타일 */
+    .footer-contents ul li{
+      padding: 3px 0;
+    }
+    
+    .footer-contents ul .title{
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    .footer-contents .emphasis {
+      color: #f0e;
+      font-weight: bold;
+    }
+
+    .footer-contents .tel{
+      font-size: 2em;
+      padding: 20px 0;
+    }
+
+    .footer-contents .account{
+      color: steelblue;
+    }
+    .footer-contents .highlight-01{
+      color: white; background-color: blue; padding: 0 3px;
+    }
+    .footer-contents .highlight-02{
+      color: white; background-color: black; padding: 0 3px;
+    }
+    .copyright .highlight-03{
+      background-color: lightgray;
+    }
+    .copyright{
+      text-align: center;
+        }
+
+    .clearfix:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="footer-contents clearfix">
+    <div class="footer-contents-1">arimall</div>
+    <div class="footer-contents-2">
+      <ul>
+        <li class="title"><a href="#">policy</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">agreement</a></li>
+        <li><a href="#" class="emphasis">site policy</a></li>
+        <li><a href="#">membership</a></li>
+      </ul>
+    </div>
+    <div class="footer-contents-3">
+      <ul>
+        <li class="title">CUSTOMER CENTER</li>
+        <li>평일 : 오전 09:00 ~오후 18:00</li>
+        <li>점심 : 오후 12:00 ~ 오후 13:00 토/일 공휴일 휴무</li>
+        <li class="tel"><i class="fas fa-phone-volume"></i>&nbsp070-1234-5678</li>
+        <li class="account">국민은행 : 015-12313-123-01 (예금주 : 홍길동)</li>
+        <li class="account">농협은행 : 12313-123-01 (예금주 : 홍길동)</li>
+      </ul>
+    </div>
+    <div class="footer-contents-4">
+      <ul>
+        <li class="title">COMPANY INFORMATION</li>
+        <li>CONPANY :<span class="highlight-01">에어몰</span> PROPRIETOR : 홍길동 이순신</li>
+        <li>TEL : 070-123-5678 E-MAIL : WEBMASTER@HOTMAIL.COMPANY</li>
+        <li>ADDRESS1 : 서울 서초구 양재동 147-15번지 임호물산 418호</li>
+        <li>ADDRESS2 : 서울 강남구 봉은사로 25-48번지 충정빌딩 102호 (물류장소 및 배송지 주소)</li>
+        <li>BUSINESS LICENSE : 417-24-78612</li>
+        <li>MAIL ORDER LICENSE : 제2022-서울서초-0817호 [<span class="highlight-02">사업자정보확인</span>]</li>
+        <li>PERSONAL INFO MANAGER : 강감찬</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    COPYRIGHT(C) AIRMALL ALL RIGHT RESERVED. <span class="highlight-03">DESIGNED BY TESTKOREA DESIGN 3.0 VERSION</span>
+  </div>
+</body>
+
+</html>
