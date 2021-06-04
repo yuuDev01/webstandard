@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <style>
+    /* *{outline: 1px solid red;} */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul>li {
+      padding: 3px 5px;
+      /* position: relative; */
+      box-sizing: border-box;
+      height: 36px;
+    }
+
+    #joinForm {
+      width: 300px;
+      margin: 50px auto;
+    }
+
+    ul>li:nth-child(even) {
+      border: 1px solid #aaa;
+      padding: 5px;
+    }
+    ul>li:nth-child(even):active{
+      border: 1px solid greenyellow;
+    }
+
+    ul>li:nth-child(even) input {
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      width: 60%;
+    }
+
+    .heightlight-01 {
+      width: 40%;
+      text-align: right;
+      display: inline-block;
+      color: #aaa;
+    }
+    #joinForm .birth {
+      border: none;
+      padding: 0;
+    }
+    #joinForm .birth ul li {
+      float: left;
+      width: 31.33%;
+      border: 1px solid #aaa;
+      padding : 3px 5px;
+    }
+    #joinForm .birth ul li:nth-child(2){
+      margin:0 3%
+    }
+
+    #joinForm .birth #month{
+      width: 90%; border:none;
+    }    
+    #joinBtn{
+      padding:3px 0; margin-top: 5px;
+    }
+    #joinBtn button{
+      width: 100%; padding:3px; border: none;
+      background-color: rgb(50,165,50); color: white; font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+    
+    }
+    #joinBtn button:hover{
+      background-color: rgb(26,134,26);
+
+    }
+
+    .clearfix::after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapjoinForm">
+    <form id="joinForm">
+      <ul>
+        <li><label for="user_id">아이디</label></li>
+        <li><input type="text" id="user_id" maxlength="20"><span class="domain heightlight-01">@naver.com</span></li>
+        <li><label for="user_pw">비밀번호</label></li>
+        <li><input type="password" id="user_pw" maxlength="12"><i class="fas fa-lock heightlight-01"></i></li>
+        <li><label for="birth">생년월일</label></li>
+        <li class="birth">
+          <ul class="clearfix">
+            <li><input type="text" id="year" placeholder="년(4)"></li>
+            <li>
+              <select id="month">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </li>
+            <li><input type="text" id="day" placeholder="일"></li>
+          </ul>
+        </li>
+        <li id="joinBtn"><button>가입하기</button></li>
+      </ul>
+    </form>
+  </div>
+</body>
+
+</html>
